@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/baekundb
+    username: baekun
+    password: mypass
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
