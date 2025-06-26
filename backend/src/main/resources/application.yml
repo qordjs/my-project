@@ -14,3 +14,12 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Seoul
+
+server:
+  address: 127.0.0.1  # 모든 IP에서 접근 가능
+  port: 8081

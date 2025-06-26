@@ -7,7 +7,7 @@ export default function Home() {
 
   const handleClick = async() => {
     try {
-      const response = await fetch('http://localhost:8080/api/hello');
+      const response = await fetch('http://localhost:8081/api/hello');
       const text = await response.text();
       setMessage(text);
     } catch (error) {
